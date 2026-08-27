@@ -1,0 +1,155 @@
+/* css/detail.css – styles khusus halaman detail tanaman */
+
+/* ── DETAIL HERO ── */
+.detail-hero {
+  background: linear-gradient(135deg, var(--lapis-dark) 0%, var(--lapis) 60%, var(--lapis-light) 100%);
+  padding: 60px 0 50px;
+  position: relative;
+  overflow: hidden;
+}
+.detail-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Gambar Tanaman */
+.plant-img-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  aspect-ratio: 4/3;
+}
+.plant-main-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+.plant-img-card:hover .plant-main-img { transform: scale(1.04); }
+.img-badge {
+  position: absolute; top: 14px; left: 14px;
+  background: var(--butter); color: #5a3e00;
+  font-size: .72rem; font-weight: 700;
+  padding: 5px 12px; border-radius: 50px;
+  letter-spacing: .5px; text-transform: uppercase;
+}
+
+/* Info Tanaman */
+.breadcrumb-text { font-size: .82rem; color: rgba(255,255,255,.6); margin-bottom: 8px; }
+.breadcrumb-text a { color: rgba(255,255,255,.7); text-decoration: none; }
+.breadcrumb-text a:hover { color: var(--butter); }
+.plant-name { color: #fff; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 4px; }
+.plant-latin { color: rgba(255,255,255,.6); font-size: .95rem; margin-bottom: 16px; }
+.plant-desc { color: rgba(255,255,255,.85); line-height: 1.7; font-size: .95rem; margin-bottom: 28px; }
+
+/* Quick Facts */
+.quick-facts { display: flex; gap: 14px; flex-wrap: wrap; }
+.fact {
+  display: flex; flex-direction: column; align-items: center;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 14px 18px;
+  text-align: center;
+  flex: 1; min-width: 80px;
+}
+.fact i { color: var(--butter); font-size: 1.3rem; margin-bottom: 6px; }
+.fact span { color: #fff; font-weight: 700; font-size: .95rem; }
+.fact small { color: rgba(255,255,255,.6); font-size: .7rem; margin-top: 2px; }
+
+/* ── TABS ── */
+.detail-tabs { border-bottom: 2px solid #dee2e6; gap: 4px; flex-wrap: nowrap; overflow-x: auto; }
+.detail-tabs .nav-link {
+  color: var(--text-mid) !important;
+  font-weight: 600; font-size: .9rem;
+  border: none; border-radius: 10px 10px 0 0;
+  padding: 10px 22px;
+  transition: background .2s, color .2s;
+  white-space: nowrap;
+}
+.detail-tabs .nav-link:hover { background: rgba(45,89,151,.08); color: var(--lapis) !important; }
+.detail-tabs .nav-link.active { background: var(--lapis) !important; color: #fff !important; border: none; }
+
+/* ── BENEFIT CARDS ── */
+.benefit-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: #fff; border-radius: 16px; padding: 22px;
+  box-shadow: 0 2px 12px rgba(45,89,151,.08);
+  height: 100%;
+  transition: transform .25s, box-shadow .25s;
+}
+.benefit-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(45,89,151,.14); }
+.benefit-card > i { font-size: 1.6rem; color: var(--lapis); flex-shrink: 0; margin-top: 2px; }
+.benefit-card strong { color: var(--lapis-dark); font-size: .95rem; display: block; margin-bottom: 6px; }
+.benefit-card p { color: var(--text-mid); font-size: .85rem; line-height: 1.5; margin: 0; }
+
+/* ── CARE CARDS ── */
+.care-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: #fff; border-radius: 16px; padding: 22px;
+  box-shadow: 0 2px 12px rgba(45,89,151,.08);
+  height: 100%;
+  transition: transform .25s, box-shadow .25s;
+}
+.care-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(45,89,151,.14); }
+.care-icon {
+  width: 50px; height: 50px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--lapis), var(--lapis-light));
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; color: #fff;
+}
+.care-body h5 { font-size: .95rem; font-weight: 700; color: var(--lapis-dark); margin-bottom: 8px; }
+.care-body p { color: var(--text-mid); font-size: .85rem; line-height: 1.6; margin: 0; }
+
+/* ── HARVEST TIMELINE ── */
+.harvest-info { background: #fff; border-radius: 20px; padding: 36px; box-shadow: 0 2px 16px rgba(45,89,151,.08); }
+.harvest-timeline { position: relative; padding-left: 40px; }
+.harvest-timeline::before {
+  content: ''; position: absolute; left: 14px; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--lapis), var(--butter));
+  border-radius: 2px;
+}
+.timeline-item { position: relative; margin-bottom: 28px; }
+.timeline-item:last-child { margin-bottom: 0; }
+.tl-dot {
+  position: absolute; left: -40px;
+  width: 28px; height: 28px;
+  background: var(--lapis); color: #fff;
+  font-weight: 700; font-size: .8rem;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 3px solid var(--oyster-light);
+}
+.tl-content h6 { font-weight: 700; color: var(--lapis-dark); margin-bottom: 4px; }
+.tl-content p { color: var(--text-mid); font-size: .87rem; line-height: 1.6; margin: 0; }
+.harvest-tip {
+  margin-top: 28px;
+  background: linear-gradient(135deg, rgba(242,217,118,.15), rgba(242,217,118,.3));
+  border: 1px solid rgba(242,217,118,.6);
+  border-radius: 12px; padding: 16px 20px;
+  font-size: .87rem; color: #5a4010;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.harvest-tip i { color: var(--butter-dark); font-size: 1.1rem; margin-top: 1px; flex-shrink: 0; }
+
+/* ── BACK BUTTON BOTTOM ── */
+.btn-back-bottom {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--lapis); color: #fff !important;
+  border-radius: 12px; padding: 14px 32px;
+  font-weight: 700; font-size: .95rem;
+  text-decoration: none;
+  transition: background .25s, transform .2s;
+  box-shadow: 0 4px 16px rgba(45,89,151,.3);
+}
+.btn-back-bottom:hover { background: var(--butter-dark); transform: scale(1.03); }
+
+/* ── FOOTER DETAIL ── */
+footer { margin-top: 20px; }
+footer p { font-size: .83rem; margin-bottom: 2px; }
+footer .copy { font-size: .75rem; opacity: .5; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 576px) {
+  .quick-facts { gap: 8px; }
+  .fact { padding: 10px 12px; }
+  .harvest-info { padding: 22px 16px; }
+}

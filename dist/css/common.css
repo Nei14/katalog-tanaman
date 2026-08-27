@@ -1,0 +1,103 @@
+/* css/common.css — Shared styles across all pages */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ── CSS VARIABLES ── */
+:root {
+  --lapis: #2d5997;
+  --lapis-dark: #1e3d6b;
+  --lapis-light: #3d6fbb;
+  --oyster: #c5c38f;
+  --oyster-light: #f0eedc;
+  --oyster-mid: #dedad8;
+  --butter: #f2d976;
+  --butter-dark: #d4b94a;
+  --text-dark: #1a2a1a;
+  --text-mid: #4a5568;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--oyster-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background: var(--lapis) !important;
+  box-shadow: 0 2px 16px rgba(45,89,151,.35);
+  padding: 14px 0;
+}
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.navbar-brand .brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.navbar-brand span.sub {
+  font-size: .68rem;
+  font-weight: 500;
+  opacity: .8;
+  display: block;
+  line-height: 1;
+}
+.nav-link { color: rgba(255,255,255,.85) !important; font-weight: 500; transition: color .2s; }
+.nav-link:hover { color: var(--butter) !important; }
+.navbar-toggler { border-color: rgba(255,255,255,.4); }
+.navbar-toggler-icon { filter: invert(1); }
+
+/* Tombol kembali (halaman detail) */
+.btn-back {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,.15);
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: .85rem; font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+.btn-back:hover { background: var(--butter); color: #5a3e00 !important; border-color: var(--butter); }
+
+/* ── FOOTER (index) ── */
+footer {
+  background: var(--lapis-dark);
+  color: rgba(255,255,255,.75);
+  padding: 40px 0 20px;
+}
+footer .brand { color: #fff; font-weight: 800; font-size: 1.1rem; }
+footer p { font-size: .82rem; margin-bottom: 4px; }
+footer .footer-link { color: rgba(255,255,255,.65); }
+footer .footer-link:hover { color: var(--butter); }
+footer .divider { border-color: rgba(255,255,255,.12); margin: 20px 0 14px; }
+footer .copy { font-size: .78rem; opacity: .55; }
+
+/* ── SCROLL TO TOP ── */
+#scrollTop {
+  position: fixed; bottom: 28px; right: 28px;
+  width: 44px; height: 44px;
+  background: var(--lapis);
+  color: #fff; border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  display: none; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(45,89,151,.4);
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  z-index: 999;
+}
+#scrollTop:hover { background: var(--butter-dark); transform: scale(1.1); }

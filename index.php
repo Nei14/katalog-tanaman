@@ -26,7 +26,7 @@
       <div class="col-lg-6" data-aos="fade-right">
         <div class="hero-badge"><i class="bi bi-patch-check"></i> Program Edukasi KKM Kelompok 47</div>
         <h1>Budidaya Tanaman Pot<br /><span>Galon Bekas</span></h1>
-        <p>KKM Kelompok 47 Universitas Muhammadiyah Cirebon di Desa Mekarwangi hadir untuk membantu warga menanam tanaman bermanfaat menggunakan galon bekas yang sudah tidak terpakai — kreatif, hemat, dan ramah lingkungan!</p>
+        <p>KKM Kelompok 47 Universitas Muhammadiyah Cirebon di Desa Mekarwangi hadir untuk membantu warga menanam tanaman bermanfaat menggunakan galon bekas yang sudah tidak terpakai &mdash; kreatif, hemat, dan ramah lingkungan!</p>
         <div class="hero-stats">
           <div class="hero-stat"><span class="num">5</span><span class="label">Jenis Tanaman</span></div>
           <div class="hero-stat"><span class="num">100%</span><span class="label">Organik</span></div>
@@ -58,9 +58,9 @@
           </div>
           <ul class="guide-steps">
             <li><span class="step-num">1</span>Bersihkan galon 19L bekas dan potong bagian atas untuk bukaan tanam.</li>
-            <li><span class="step-num">2</span>Buat <strong style="color:#fff;">5–6 lubang drainase</strong> di bagian bawah galon menggunakan paku yang dipanaskan.</li>
-            <li><span class="step-num">3</span>Lapisi dasar dengan kerikil atau pecahan styrofoam (±3 cm) sebelum isi media tanam.</li>
-            <li><span class="step-num">4</span>Isi media campuran 2:1:1 hingga ¾ tinggi galon, lalu tanam bibit.</li>
+            <li><span class="step-num">2</span>Buat <strong style="color:#fff;">5&ndash;6 lubang drainase</strong> di bagian bawah galon menggunakan paku yang dipanaskan.</li>
+            <li><span class="step-num">3</span>Lapisi dasar dengan kerikil atau pecahan styrofoam (&plusmn;3 cm) sebelum isi media tanam.</li>
+            <li><span class="step-num">4</span>Isi media campuran 2:1:1 hingga &frac34; tinggi galon, lalu tanam bibit.</li>
           </ul>
         </div>
       </div>

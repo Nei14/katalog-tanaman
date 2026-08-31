@@ -46,33 +46,20 @@
 .bahan-item { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 8px; padding: 6px 10px; font-size: .78rem; color: rgba(255,255,255,.9); }
 .bahan-item i { color: var(--butter); font-size: .9rem; }
 
-/* Layer stack */
-.layer-stack { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
-.layer-item { display: flex; align-items: flex-start; gap: 10px; border-radius: 10px; padding: 10px 12px; position: relative; }
-.layer-item strong { color: #fff; font-size: .85rem; display: block; }
-.layer-item small { color: rgba(255,255,255,.65); font-size: .75rem; }
-.layer-item i { color: var(--butter); font-size: 1rem; margin-top: 2px; flex-shrink: 0; }
-.layer-arang { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); }
-.layer-media { background: rgba(45,89,151,.4); border: 1px solid rgba(255,255,255,.2); }
-.layer-top   { background: rgba(242,217,118,.15); border: 1px solid rgba(242,217,118,.3); }
-.layer-badge { position: absolute; top: 6px; right: 8px; font-size: .62rem; font-weight: 700; background: rgba(255,255,255,.15); color: rgba(255,255,255,.7); padding: 2px 7px; border-radius: 50px; text-transform: uppercase; }
+/* Ratio row (campuran tanah) */
+.ratio-row { display: flex; align-items: stretch; gap: 6px; flex-wrap: nowrap; margin-bottom: 14px; }
+.ratio-pill { display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 10px; padding: 8px 6px; flex: 1; min-width: 0; text-align: center; }
+.ratio-pill .rp-num { font-size: 1.3rem; font-weight: 800; color: var(--butter); line-height: 1; display: block; }
+.ratio-pill .rp-label { font-size: .7rem; color: rgba(255,255,255,.8); margin-top: 3px; display: block; }
+.ratio-plus { color: rgba(255,255,255,.5); font-size: 1rem; font-weight: 700; flex-shrink: 0; align-self: center; padding: 0 2px; }
 
-/* Alternatif campuran */
-.alternatif-grid { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
-.alt-card { display: flex; align-items: flex-start; gap: 10px; border-radius: 10px; padding: 10px 12px; }
-.alt-card .alt-num { width: 24px; height: 24px; border-radius: 50%; font-size: .78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.alt-card .alt-body { display: flex; flex-direction: column; }
-.alt-card .alt-body strong { color: #fff; font-size: .82rem; }
-.alt-card .alt-ratio { color: rgba(255,255,255,.6); font-size: .73rem; margin-top: 2px; }
-.alt-1 { background: rgba(242,217,118,.15); border: 1px solid rgba(242,217,118,.3); }
-.alt-1 .alt-num { background: var(--butter); color: var(--lapis-dark); }
-.alt-2 { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); }
-.alt-2 .alt-num { background: rgba(255,255,255,.2); color: #fff; }
-.alt-3 { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); }
-.alt-3 .alt-num { background: rgba(255,255,255,.15); color: #fff; }
-.alt-4 { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); }
-.alt-4 .alt-num { background: rgba(255,255,255,.12); color: #fff; }
-.guide-note { background: rgba(242,217,118,.1); border: 1px solid rgba(242,217,118,.3); border-radius: 10px; padding: 10px 14px; font-size: .8rem; color: rgba(255,255,255,.85); display: flex; align-items: flex-start; gap: 8px; }
+/* Guide steps */
+.guide-steps { list-style: none; padding: 0; margin: 0; }
+.guide-steps li { display: flex; align-items: flex-start; gap: 10px; color: rgba(255,255,255,.85); font-size: .82rem; margin-bottom: 8px; line-height: 1.5; }
+.guide-steps li:last-child { margin-bottom: 0; }
+.step-num { width: 22px; height: 22px; border-radius: 50%; background: var(--butter); color: var(--lapis-dark); font-size: .7rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+
+.guide-note { background: rgba(242,217,118,.1); border: 1px solid rgba(242,217,118,.3); border-radius: 10px; padding: 10px 14px; font-size: .8rem; color: rgba(255,255,255,.85); display: flex; align-items: flex-start; gap: 8px; margin-top: 12px; }
 .guide-note i { color: var(--butter); flex-shrink: 0; margin-top: 2px; }
 
 

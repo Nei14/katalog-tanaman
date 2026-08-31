@@ -154,6 +154,19 @@ footer .copy { font-size: .75rem; opacity: .5; }
   .harvest-info { padding: 22px 16px; }
 }
 
+/* ── SECTION HEADING (pengganti tab) ── */
+.content-section { margin-top: 28px; }
+.content-section-title {
+  font-size: .85rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--lapis-dark);
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(45,89,151,.15);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.content-section-title i { color: var(--lapis); font-size: 1rem; }
+
+
 /* ── MEDIA TANAM COMPACT (halaman detail) ── */
 .media-tanam-compact {
   background: linear-gradient(135deg, rgba(45,89,151,.06), rgba(45,89,151,.02));

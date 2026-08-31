@@ -36,34 +36,9 @@
 
       <!-- KANAN: Kartu Panduan Media Tanam -->
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="120">
-        <div class="hero-guide-card">
-          <p class="guide-title"><i class="bi bi-journal-bookmark-fill me-1"></i>Panduan Racikan Media Tanam</p>
-          <h5>Campuran Media Tanam Pot Galon Bekas</h5>
-          <p class="guide-desc">Gunakan racikan ini untuk hasil tanam terbaik. Campur rata sebelum dimasukkan ke dalam galon.</p>
-          <div class="ratio-row">
-            <div class="ratio-pill">
-              <span class="rp-num">2</span>
-              <span class="rp-label"><i class="bi bi-bag me-1"></i>Tanah</span>
-            </div>
-            <span class="ratio-plus">+</span>
-            <div class="ratio-pill">
-              <span class="rp-num">1</span>
-              <span class="rp-label"><i class="bi bi-tree me-1"></i>Pupuk Kandang</span>
-            </div>
-            <span class="ratio-plus">+</span>
-            <div class="ratio-pill">
-              <span class="rp-num">1</span>
-              <span class="rp-label"><i class="bi bi-wind me-1"></i>Sekam Padi</span>
-            </div>
-          </div>
-          <ul class="guide-steps">
-            <li><span class="step-num">1</span>Bersihkan galon 19L bekas dan potong bagian atas untuk bukaan tanam.</li>
-            <li><span class="step-num">2</span>Buat <strong style="color:#fff;">5&ndash;6 lubang drainase</strong> di bagian bawah galon menggunakan paku yang dipanaskan.</li>
-            <li><span class="step-num">3</span>Lapisi dasar dengan kerikil atau pecahan styrofoam (&plusmn;3 cm) sebelum isi media tanam.</li>
-            <li><span class="step-num">4</span>Isi media campuran 2:1:1 hingga &frac34; tinggi galon, lalu tanam bibit.</li>
-          </ul>
-        </div>
+        <?php $mediaMode = 'full'; require 'includes/media-tanam.php'; ?>
       </div>
+
 
     </div>
   </div>

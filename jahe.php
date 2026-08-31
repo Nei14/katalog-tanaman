@@ -44,7 +44,8 @@
 
 <section class="detail-body py-5">
   <div class="container">
-    <ul class="nav nav-tabs detail-tabs mb-4" id="plantTab" role="tablist" data-aos="fade-up">
+    <?php $mediaMode = 'compact'; require 'includes/media-tanam.php'; ?>
+    <ul class="nav nav-tabs detail-tabs mb-4 mt-4" id="plantTab" role="tablist" data-aos="fade-up">
       <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#manfaat">Manfaat</button></li>
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#perawatan">Perawatan</button></li>
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#panen">Panen</button></li>

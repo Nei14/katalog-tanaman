@@ -1,127 +1,85 @@
 <?php
 /**
- * Komponen Panduan Media Tanam Pot Galon Bekas
- * Berdasarkan: Materi Workshop KKM 47 - Proker Galon Bekas
- *
- * Cara pakai:
- *   $mediaMode = 'full';    // tampilan lengkap (hero index)
- *   $mediaMode = 'compact'; // tampilan ringkas collapsible (halaman detail)
- *   require 'includes/media-tanam.php';
+ * Komponen Panduan Media Tanam - Versi Ringkas & Mudah Dipahami
+ * $mediaMode = 'full'    → tampilan di halaman utama (index)
+ * $mediaMode = 'compact' → tampilan collapsible di halaman detail
  */
 $mediaMode = $mediaMode ?? 'full';
 ?>
 
 <?php if ($mediaMode === 'full'): ?>
-<!-- ===== TAMPILAN LENGKAP (index.php) ===== -->
+<!-- ===== TAMPILAN PENUH (index.php) ===== -->
 <div class="hero-guide-card">
-  <p class="guide-title"><i class="bi bi-journal-bookmark-fill me-1"></i>Panduan Media Tanam Pot Galon</p>
-  <h5>Alat &amp; Bahan yang Diperlukan</h5>
+  <p class="guide-title"><i class="bi bi-journal-bookmark-fill me-1"></i>Panduan Singkat</p>
+  <h5>Cara Tanam di Galon Bekas</h5>
 
-  <!-- Bahan-bahan -->
+  <!-- Bahan -->
+  <p class="guide-desc">Yang dibutuhkan:</p>
   <div class="bahan-row">
-    <div class="bahan-item"><i class="bi bi-bucket-fill"></i><span>Galon Bekas 19L</span></div>
-    <div class="bahan-item"><i class="bi bi-bag-fill"></i><span>Tanah Digemburkan</span></div>
-    <div class="bahan-item"><i class="bi bi-tree-fill"></i><span>Pupuk Organik / Pupuk Kandang</span></div>
-    <div class="bahan-item"><i class="bi bi-wind"></i><span>Sekam Padi (Huut Badag)</span></div>
+    <div class="bahan-item"><i class="bi bi-bucket-fill"></i><span>Galon Bekas</span></div>
+    <div class="bahan-item"><i class="bi bi-bag-fill"></i><span>Tanah</span></div>
+    <div class="bahan-item"><i class="bi bi-tree-fill"></i><span>Pupuk Kandang</span></div>
+    <div class="bahan-item"><i class="bi bi-wind"></i><span>Sekam Padi</span></div>
   </div>
 
-  <h5 class="mt-3">Lapisan Isi Galon</h5>
-  <p class="guide-desc">Susun lapisan dari bawah ke atas sesuai urutan berikut:</p>
-
-  <div class="layer-stack">
-    <div class="layer-item layer-arang">
-      <span class="layer-badge">Dasar</span>
-      <i class="bi bi-layers me-2"></i><strong>Arang Kayu &plusmn;5 cm</strong>
-      <small>Berfungsi sebagai saluran drainase air ke bawah</small>
-    </div>
-    <div class="layer-item layer-media">
-      <span class="layer-badge">Tengah</span>
-      <i class="bi bi-layers-fill me-2"></i><strong>Campuran Media Tanam</strong>
-      <small>Tanah + sekam padi (1:1) &mdash; menjaga tanah tidak padat</small>
-    </div>
-    <div class="layer-item layer-top">
-      <span class="layer-badge">Atas</span>
-      <i class="bi bi-flower3 me-2"></i><strong>Tanam Bibit</strong>
-      <small>Isi hingga &frac34; tinggi galon, lalu tanam bibit</small>
-    </div>
+  <!-- Resep Campuran -->
+  <p class="guide-desc mt-3">Campuran tanah (aduk rata):</p>
+  <div class="ratio-row">
+    <div class="ratio-pill"><span class="rp-num">1</span><span class="rp-label">Tanah</span></div>
+    <span class="ratio-plus">+</span>
+    <div class="ratio-pill"><span class="rp-num">1</span><span class="rp-label">Pupuk Kandang</span></div>
+    <span class="ratio-plus">+</span>
+    <div class="ratio-pill"><span class="rp-num">1</span><span class="rp-label">Sekam Padi</span></div>
   </div>
 
-  <h5 class="mt-3">4 Alternatif Campuran Media Tanam</h5>
-  <p class="guide-desc">Pilih salah satu sesuai bahan yang tersedia:</p>
-
-  <div class="alternatif-grid">
-    <div class="alt-card alt-1">
-      <span class="alt-num">1</span>
-      <div class="alt-body">
-        <strong>Tanah + Pupuk Kandang + Sekam Padi</strong>
-        <span class="alt-ratio">Perbandingan 1 : 1 : 1</span>
-      </div>
-    </div>
-    <div class="alt-card alt-2">
-      <span class="alt-num">2</span>
-      <div class="alt-body">
-        <strong>Tanah + Pupuk Kandang + Abu Sekam Padi</strong>
-        <span class="alt-ratio">Cocok jika tersedia abu sekam</span>
-      </div>
-    </div>
-    <div class="alt-card alt-3">
-      <span class="alt-num">3</span>
-      <div class="alt-body">
-        <strong>Tanah + Pasir + Pupuk Kandang</strong>
-        <span class="alt-ratio">Kotoran ayam (pastikan sudah matang)</span>
-      </div>
-    </div>
-    <div class="alt-card alt-4">
-      <span class="alt-num">4</span>
-      <div class="alt-body">
-        <strong>Tanah + Pupuk Organik + Sekam Padi</strong>
-        <span class="alt-ratio">Gunakan pupuk organik padat/cair</span>
-      </div>
-    </div>
-  </div>
+  <!-- Tips -->
+  <ul class="guide-steps mt-3">
+    <li><span class="step-num">1</span>Lubangi bawah galon 5&ndash;6 titik supaya air tidak menggenang.</li>
+    <li><span class="step-num">2</span>Isi bagian paling bawah dengan arang kayu &plusmn;5 cm dulu.</li>
+    <li><span class="step-num">3</span>Masukkan campuran tanah hingga &frac34; penuh, lalu tanam bibit.</li>
+  </ul>
 
   <div class="guide-note">
-    <i class="bi bi-info-circle-fill me-2"></i>
-    <span>Jika menggunakan pupuk kandang, pastikan sudah <strong>matang/lama</strong> agar tidak berbau menyengat dan tidak merusak tanaman.</span>
+    <i class="bi bi-lightbulb-fill me-2"></i>
+    <span>Pupuk kandang harus sudah <strong>kering dan tidak berbau</strong> sebelum dicampur.</span>
   </div>
 </div>
 
 <?php else: ?>
 <!-- ===== TAMPILAN RINGKAS (halaman detail) ===== -->
 <div class="media-tanam-compact" data-aos="fade-up">
-  <button class="mtkompak-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mediaTanamDetail" aria-expanded="false">
+  <button class="mtkompak-toggle" type="button" data-bs-toggle="collapse"
+    data-bs-target="#mediaTanamDetail" aria-expanded="false">
     <i class="bi bi-layers-fill me-2"></i>
-    <span>Panduan Media Tanam Pot Galon Bekas</span>
+    <span>Cara Tanam di Galon Bekas</span>
     <i class="bi bi-chevron-down ms-auto toggle-icon"></i>
   </button>
   <div class="collapse" id="mediaTanamDetail">
     <div class="mtkompak-body">
-      <!-- Bahan -->
-      <p class="mtkompak-label"><i class="bi bi-box2-fill me-1"></i> <strong>Alat &amp; Bahan</strong></p>
+
+      <p class="mtkompak-label"><strong>Bahan yang dibutuhkan:</strong></p>
       <div class="mtkompak-bahan">
-        <span><i class="bi bi-bucket"></i> Galon Bekas 19L</span>
-        <span><i class="bi bi-bag"></i> Tanah Digemburkan</span>
-        <span><i class="bi bi-tree"></i> Pupuk Organik/Kandang</span>
-        <span><i class="bi bi-wind"></i> Sekam Padi (Huut Badag)</span>
+        <span><i class="bi bi-bucket"></i> Galon Bekas</span>
+        <span><i class="bi bi-bag"></i> Tanah</span>
+        <span><i class="bi bi-tree"></i> Pupuk Kandang</span>
+        <span><i class="bi bi-wind"></i> Sekam Padi</span>
       </div>
 
-      <!-- Lapisan -->
-      <p class="mtkompak-label mt-3"><i class="bi bi-stack me-1"></i> <strong>Lapisan Isi Galon (bawah ke atas)</strong></p>
-      <div class="mtkompak-layers">
-        <div class="mtlayer"><span class="mtl-num">1</span><div><strong>Arang Kayu &plusmn;5 cm</strong> &mdash; drainase</div></div>
-        <div class="mtlayer"><span class="mtl-num">2</span><div><strong>Campuran Media</strong> &mdash; tanah + sekam (1:1)</div></div>
-        <div class="mtlayer"><span class="mtl-num">3</span><div><strong>Tanam bibit</strong> &mdash; isi hingga &frac34; galon</div></div>
+      <p class="mtkompak-label mt-3"><strong>Campuran tanah (ukuran sama rata):</strong></p>
+      <div class="mtkompak-recipe">
+        <span class="recipe-chip">1 bagian<br><strong>Tanah</strong></span>
+        <span class="recipe-plus">+</span>
+        <span class="recipe-chip">1 bagian<br><strong>Pupuk Kandang</strong></span>
+        <span class="recipe-plus">+</span>
+        <span class="recipe-chip">1 bagian<br><strong>Sekam Padi</strong></span>
       </div>
 
-      <!-- Alternatif -->
-      <p class="mtkompak-label mt-3"><i class="bi bi-list-check me-1"></i> <strong>4 Alternatif Campuran Media Tanam</strong></p>
-      <ol class="mtkompak-alt">
-        <li>Tanah + Pupuk Kandang + Sekam Padi <em>(1:1:1)</em></li>
-        <li>Tanah + Pupuk Kandang + Abu Sekam Padi</li>
-        <li>Tanah + Pasir + Pupuk Kandang (kotoran ayam matang)</li>
-        <li>Tanah + Pupuk Organik + Sekam Padi</li>
-      </ol>
-      <p class="mtkompak-note"><i class="bi bi-exclamation-triangle-fill me-1"></i>Gunakan pupuk kandang yang sudah matang agar tidak merusak tanaman.</p>
+      <div class="mtkompak-steps">
+        <div class="mts"><span>1</span>Lubangi bawah galon 5&ndash;6 titik agar air tidak tergenang.</div>
+        <div class="mts"><span>2</span>Taruh arang kayu &plusmn;5 cm di dasar galon dulu.</div>
+        <div class="mts"><span>3</span>Masukkan campuran tanah, lalu tanam bibit.</div>
+      </div>
+
     </div>
   </div>
 </div>

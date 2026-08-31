@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jahe Merah – KKM 47 Desa Mekarwangi</title>
-  <meta name="description" content="Panduan menanam Jahe Merah di pot galon bekas – manfaat, perawatan, dan estimasi panen untuk warga Desa Mekarwangi." />
+  <meta name="description" content="Panduan menanam Jahe Merah di galon bekas untuk warga Desa Mekarwangi." />
   <link rel="icon" href="images/logo-kkm.jpg" type="image/jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="css/detail.css" />
 </head>
 <body>
-
 <?php require 'includes/navbar.php'; ?>
-
 <section class="detail-hero">
   <div class="container">
     <div class="row align-items-center g-5">
@@ -30,18 +28,17 @@
         <p class="breadcrumb-text"><a href="index.php">Katalog</a> / Jahe Merah</p>
         <h1 class="plant-name">Jahe Merah</h1>
         <p class="plant-latin"><em>Zingiber officinale var. rubrum</em></p>
-        <p class="plant-desc">Jahe merah adalah varietas jahe paling berkhasiat dengan kandungan gingerol dan shogaol yang jauh lebih tinggi dibanding jahe biasa. Rimpangnya berwarna merah-oranye dengan rasa lebih pedas — sangat populer untuk jamu dan minuman herbal.</p>
+        <p class="plant-desc">Jahe merah adalah jahe paling berkhasiat. Rimpangnya merah-oranye dengan rasa lebih pedas, sangat populer untuk jamu dan minuman penghangat tubuh.</p>
         <div class="quick-facts">
-          <div class="fact"><i class="bi bi-clock"></i><span>8–10 Bulan</span><small>Estimasi Panen</small></div>
-          <div class="fact"><i class="bi bi-sun"></i><span>4–6 Jam</span><small>Sinar Matahari</small></div>
-          <div class="fact"><i class="bi bi-droplet"></i><span>1x/hari</span><small>Frekuensi Siram</small></div>
-          <div class="fact"><i class="bi bi-bucket"></i><span>Galon 19L</span><small>Media Tanam</small></div>
+          <div class="fact"><i class="bi bi-clock"></i><span>8&ndash;10 Bln</span><small>Panen</small></div>
+          <div class="fact"><i class="bi bi-sun"></i><span>4&ndash;6 Jam</span><small>Sinar Matahari</small></div>
+          <div class="fact"><i class="bi bi-droplet"></i><span>1&ndash;2x/hari</span><small>Siram</small></div>
+          <div class="fact"><i class="bi bi-bucket"></i><span>Galon 19L</span><small>Pot</small></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <section class="detail-body py-5">
   <div class="container">
     <?php $mediaMode = 'compact'; require 'includes/media-tanam.php'; ?>
@@ -53,29 +50,29 @@
     <div class="tab-content" data-aos="fade-up" data-aos-delay="100">
       <div class="tab-pane fade show active" id="manfaat">
         <div class="row g-3">
-          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-shield-plus"></i><div><strong>Meningkatkan Imunitas</strong><p>Kandungan gingerol yang tinggi berfungsi sebagai antioksidan kuat yang memperkuat sistem kekebalan tubuh secara alami.</p></div></div></div>
-          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-thermometer-snow"></i><div><strong>Menghangatkan Tubuh</strong><p>Efek termogenik jahe merah sangat efektif menghangatkan tubuh, meredakan masuk angin, dan mengatasi gejala flu.</p></div></div></div>
-          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-activity"></i><div><strong>Anti-Inflamasi Kuat</strong><p>Senyawa shogaol dan gingerol bekerja sebagai anti-inflamasi alami yang membantu meredakan nyeri sendi dan otot secara efektif.</p></div></div></div>
-          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-heart"></i><div><strong>Kesehatan Jantung</strong><p>Membantu menurunkan kadar kolesterol jahat dan menjaga tekanan darah dalam batas normal untuk kesehatan jantung optimal.</p></div></div></div>
+          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-thermometer-sun"></i><div><strong>Menghangatkan Tubuh</strong><p>Segelas wedang jahe merah bisa menghangatkan tubuh dan memperlancar peredaran darah.</p></div></div></div>
+          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-heart-pulse"></i><div><strong>Meningkatkan Daya Tahan</strong><p>Kandungan gingerolnya membantu tubuh lebih kuat melawan penyakit dan masuk angin.</p></div></div></div>
+          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-emoji-smile"></i><div><strong>Meredakan Mual</strong><p>Sangat efektif untuk mengatasi mual, mabuk perjalanan, dan perut tidak nyaman.</p></div></div></div>
+          <div class="col-md-6"><div class="benefit-card"><i class="bi bi-mortarboard"></i><div><strong>Bahan Jamu</strong><p>Jahe merah adalah bahan utama berbagai jamu tradisional yang sudah terbukti khasiatnya.</p></div></div></div>
         </div>
       </div>
       <div class="tab-pane fade" id="perawatan">
         <div class="row g-3">
-          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-droplet-fill"></i></div><div class="care-body"><h5>Penyiraman</h5><p>Siram <strong>1 kali sehari</strong> secukupnya. Jahe merah sangat rentan busuk akar jika kelebihan air. Pastikan media tanam memiliki drainase sempurna dan jangan siram terlalu basah.</p></div></div></div>
-          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-cloud-sun-fill"></i></div><div class="care-body"><h5>Sinar Matahari</h5><p>Jahe merah tumbuh baik di <strong>cahaya sedang atau semi-teduh (4–6 jam)</strong>. Hindari sinar matahari langsung penuh seharian yang dapat membakar daun.</p></div></div></div>
-          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-layers-fill"></i></div><div class="care-body"><h5>Media Tanam di Pot Galon</h5><p>Gunakan galon bekas 19 liter (dipotong bagian atasnya) yang dilubangi <strong>5–6 titik di dasar</strong>. Isi dengan campuran <strong>tanah : pupuk kandang : sekam padi = 2:1:1</strong>. Galon yang lebar lebih disukai karena rimpang jahe merah tumbuh horizontal ke samping.</p></div></div></div>
-          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-calendar-check"></i></div><div class="care-body"><h5>Fase Dormansi</h5><p>Pada musim kering, daun akan menguning dan layu — ini normal. <strong>Kurangi penyiraman</strong> dan biarkan rimpang beristirahat. Tunas baru akan tumbuh kembali di musim hujan.</p></div></div></div>
+          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-droplet-fill"></i></div><div class="care-body"><h5>Penyiraman</h5><p>Siram <strong>1&ndash;2 kali sehari</strong>. Tanah harus lembap tapi tidak tergenang. Kurangi siram saat musim kemarau.</p></div></div></div>
+          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-cloud-sun-fill"></i></div><div class="care-body"><h5>Sinar Matahari</h5><p>Cocok di tempat <strong>agak teduh</strong>. Hindari sinar matahari langsung seharian penuh karena bisa membuat daun terbakar.</p></div></div></div>
+          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-layers-fill"></i></div><div class="care-body"><h5>Tanah di Galon</h5><p>Lubangi bawah galon 5&ndash;6 titik. Isi dengan campuran <strong>tanah : pupuk : sekam (1:1:1)</strong>. Galon yang lebar lebih bagus karena rimpang tumbuh ke samping.</p></div></div></div>
+          <div class="col-md-6"><div class="care-card"><div class="care-icon"><i class="bi bi-calendar-check"></i></div><div class="care-body"><h5>Masa Istirahat</h5><p>Saat kemarau, daun mungkin menguning &mdash; itu normal. Kurangi penyiraman dan tunggu musim hujan, tanaman akan tumbuh lagi.</p></div></div></div>
         </div>
       </div>
       <div class="tab-pane fade" id="panen">
         <div class="harvest-info">
           <div class="harvest-timeline">
-            <div class="timeline-item"><div class="tl-dot">1</div><div class="tl-content"><h6>Bulan 1: Persiapan Bibit</h6><p>Pilih rimpang jahe merah segar yang sudah ada tunasnya. Rendam dalam air semalam, lalu tanam dengan tunas menghadap ke atas, kedalaman 5–7 cm.</p></div></div>
-            <div class="timeline-item"><div class="tl-dot">2</div><div class="tl-content"><h6>Bulan 2–3: Tumbuh Tunas</h6><p>Tunas daun mulai bermunculan dari rimpang. Tanaman mulai berdiri tegak dengan daun berwarna hijau. Jaga kelembapan tanah secara konsisten.</p></div></div>
-            <div class="timeline-item"><div class="tl-dot">3</div><div class="tl-content"><h6>Bulan 4–7: Fase Vegetatif</h6><p>Tanaman tumbuh aktif membentuk rimpang baru di dalam tanah. Berikan pupuk organik rutin untuk mendukung pembentukan rimpang yang besar dan berkualitas.</p></div></div>
-            <div class="timeline-item"><div class="tl-dot">4</div><div class="tl-content"><h6>Bulan 8–10: Panen Rimpang</h6><p>Saat daun mulai menguning secara alami, rimpang siap dipanen. Keluarkan seluruh media tanam dengan hati-hati dan ambil rimpang yang sudah besar.</p></div></div>
+            <div class="timeline-item"><div class="tl-dot">1</div><div class="tl-content"><h6>Bulan 1: Tanam Bibit</h6><p>Pilih rimpang jahe segar yang ada tunasnya. Rendam semalam, tanam dengan tunas menghadap atas sedalam 5&ndash;7 cm.</p></div></div>
+            <div class="timeline-item"><div class="tl-dot">2</div><div class="tl-content"><h6>Bulan 2&ndash;3: Tumbuh Tunas</h6><p>Tunas daun mulai muncul dari rimpang. Tanaman mulai berdiri tegak dengan daun hijau.</p></div></div>
+            <div class="timeline-item"><div class="tl-dot">3</div><div class="tl-content"><h6>Bulan 4&ndash;7: Rimpang Tumbuh</h6><p>Di dalam tanah, rimpang baru sedang berkembang. Berikan pupuk rutin untuk hasil terbaik.</p></div></div>
+            <div class="timeline-item"><div class="tl-dot">4</div><div class="tl-content"><h6>Bulan 8&ndash;10: Panen</h6><p>Saat daun sudah menguning sendiri, rimpang siap dipanen. Keluarkan hati-hati dari galon.</p></div></div>
           </div>
-          <div class="harvest-tip"><i class="bi bi-lightbulb-fill"></i><strong>Tips Panen:</strong> Jahe merah siap panen ketika daunnya sudah menguning dan mengering secara alami (8–10 bulan). Gali dengan hati-hati menggunakan tangan atau sekop kecil. Simpan sebagian rimpang untuk bibit tanaman berikutnya.</div>
+          <div class="harvest-tip"><i class="bi bi-lightbulb-fill"></i><strong>Tips:</strong> Simpan sebagian rimpang yang kecil untuk dijadikan bibit tanaman berikutnya.</div>
         </div>
       </div>
     </div>
@@ -84,7 +81,6 @@
     </div>
   </div>
 </section>
-
 <?php require 'includes/footer-detail.php'; ?>
 <?php require 'includes/scripts.php'; ?>
 </body>

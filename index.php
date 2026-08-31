@@ -24,9 +24,9 @@
 
       <!-- KIRI: Teks Sambutan -->
       <div class="col-lg-6" data-aos="fade-right">
-        <div class="hero-badge"><i class="bi bi-patch-check"></i> Program Edukasi KKM Kelompok 47</div>
-        <h1>Budidaya Tanaman Pot<br /><span>Galon Bekas</span></h1>
-        <p>KKM Kelompok 47 Universitas Muhammadiyah Cirebon di Desa Mekarwangi hadir untuk membantu warga menanam tanaman bermanfaat menggunakan galon bekas yang sudah tidak terpakai &mdash; kreatif, hemat, dan ramah lingkungan!</p>
+        <div class="hero-badge"><i class="bi bi-patch-check"></i> Program KKM Kelompok 47</div>
+        <h1>Tanam Sayuran &amp; Herbal<br /><span>dari Galon Bekas</span></h1>
+        <p>Tidak perlu lahan luas. Cukup pakai galon bekas, Anda sudah bisa menanam sendiri di rumah. Hemat, sehat, dan mudah dilakukan siapa saja!</p>
         <div class="hero-stats">
           <div class="hero-stat"><span class="num">5</span><span class="label">Jenis Tanaman</span></div>
           <div class="hero-stat"><span class="num">100%</span><span class="label">Organik</span></div>

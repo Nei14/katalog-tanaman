@@ -233,3 +233,30 @@ footer .copy { font-size: .75rem; opacity: .5; }
   display: flex; gap: 6px; align-items: flex-start;
 }
 .mtkompak-note i { color: #c87800; flex-shrink: 0; margin-top: 1px; }
+
+/* Compact recipe row */
+.mtkompak-recipe {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 10px;
+}
+.recipe-chip {
+  flex: 1; min-width: 70px; text-align: center;
+  background: rgba(45,89,151,.08); border: 1px solid rgba(45,89,151,.18);
+  border-radius: 10px; padding: 8px 6px; font-size: .78rem; color: var(--text-mid);
+  line-height: 1.4;
+}
+.recipe-chip strong { color: var(--lapis-dark); display: block; }
+.recipe-plus { color: var(--lapis); font-weight: 700; font-size: 1rem; flex-shrink: 0; }
+
+/* Compact steps */
+.mtkompak-steps { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
+.mts {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: .82rem; color: var(--text-mid); line-height: 1.5;
+}
+.mts span {
+  width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+  background: var(--lapis); color: #fff;
+  font-size: .68rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+
